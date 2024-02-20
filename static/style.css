@@ -1,0 +1,19 @@
+html, body {
+    height: 100%; /* Ensure minimum height for the html element */
+    min-height: 100vh; /* Ensure minimum height for the body element */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('./background1.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the background (optional) */
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.7); /* Optional: makes navbar slightly transparent */
+}
+
+.navbar-item img {
+    max-height: 2rem; /* Adjust the size as needed */
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to HoTMiXer!</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.9"></script>
+    <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/static/hotmix_logo.png" alt="Put Logo Here" style="max-height: 3rem;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item">
+                    About
+                </a>
+                <a class="navbar-item">
+                    Pricing
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Account
+                    </a>
+                    <div class="navbar-dropdown">
+                        <!-- Dropdown items -->
+                        <a class="navbar-item">
+                            Profile
+                        </a>
+                        <a class="navbar-item">
+                            Settings
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <!-- Updated buttons for Auth0 integration -->
+                        <a class="button is-primary login-button">
+                            <strong>Sign up / Log in</strong>
+                        </a>
+                        <a class="button is-light logout-button" style="display: none;">
+                            Log out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Your content here -->
+        </div>
+    </section>
+</body>
+</html>
